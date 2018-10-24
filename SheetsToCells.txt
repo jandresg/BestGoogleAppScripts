@@ -1,0 +1,6 @@
+function getSheetNames() {
+  return SpreadsheetApp.getActive().getSheets()
+  .map(function (sh) {
+     return sh.getName()
+     }).splice(1)
+)
